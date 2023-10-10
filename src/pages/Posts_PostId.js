@@ -14,11 +14,11 @@ import "firebase/compat/firestore";
 const Posts_PostId = () => {
   const { postId } = useParams();
 
-  default_displayName = "DefaultName";
-  user_post_displayName = "HAHAHA";
+  // default_displayName = "DefaultName";
+  //  user_post_displayName = "HAHAHA";
 
-  default_url = "http://123fd";
-  user_post_url = "http://abc";
+  // default_url = "http://123fd";
+  // user_post_url = "http://abc";
 
   const [post, setPost] = useState({
     author: {
@@ -51,10 +51,6 @@ const Posts_PostId = () => {
           <Grid.Column width={10}></Grid.Column>
           <Image src={post.author?.photoUrl ? post.author.photoUrl : ""} />
           {post.author?.displayName ? post.author.displayName : "No username"}
-          {post?.author?.displayName?.subName
-            ? console.log("subName is not null")
-            : console.log("subName is null")}
-
           <Header>
             {post.title}
             <Header.Subheader>
