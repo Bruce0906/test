@@ -1,0 +1,21 @@
+.menu_style {
+    background: linear-gradient(45deg, #b4f1f1, #83bff0) !important;
+    border: 1px solid #ccc;
+}
+
+.form_style {
+    /* 从左上角到右下角的线性渐变，使用角度 */
+    background: linear-gradient(45deg, #b4f1f1, #83bff0);
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_input_size{
+    min-width: 300px;
+    font-size: 16px;
+}
